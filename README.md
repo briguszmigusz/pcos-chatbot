@@ -12,7 +12,21 @@ This application combines:
 * A custom Streamlit interface
 
 ---
+## 🚀 Live Demo
 
+https://pcos-chatbot.streamlit.app/
+---
+## 📸 Screenshots
+
+### Weekly Meal Planner
+![Weekly Planner](assets/screenshot1.png)
+
+### Recipe Q&A
+![Recipe Q&A](assets/screenshot2.png)
+
+### PCOS Assistant Mode
+![PCOS Assistant](assets/screenshot3.png)
+---
 ## ✨ Features
 
 ### 🗓 Weekly Meal Planning
