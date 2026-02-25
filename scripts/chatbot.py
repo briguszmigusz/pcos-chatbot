@@ -32,8 +32,17 @@ client = chromadb.Client(
     )
 )
 
-collection = client.get_collection("recipes")
+try:
+    collection = client.get_collection("recipes")
 
+    if collection.count() == 0:
+        raise Exception("Empty collection")
+
+except Exception as e:
+    print("Collection missing or empty. Running ingestion...")
+    from ingest import ingest_recipes
+    ingest_recipes()
+    collection = client.get_collection("recipes")
 
 # ==========================
 # UTILITIES
